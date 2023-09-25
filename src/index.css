@@ -1,0 +1,53 @@
+:root {
+  font-family: "Noto Sans JP", sans-serif;
+
+  /* colors */
+  --textColor: #000;
+  --textSubButtonColor: #1a35c9;
+  --backgroundColor: #ffffff;
+  --backgroundSubColor: #f4f4f4;
+  --backgroundSubColor2: #ffd0cc;
+
+  /* breakPoint */
+  --mobileScreenMax: 640px;
+  --tabScreenMin: 641px;
+  --tabScreenMax: 1023px;
+  --laptopScreenMin: 1024px;
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* tab-Screen */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+}
+/* mobile-screen */
+@media (max-width: 640px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 12px;
+  }
+}
