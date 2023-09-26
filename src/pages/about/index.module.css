@@ -1,3 +1,8 @@
+.mainTag {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--sectionGapLG);
+}
 .banner {
   height: 350px;
   display: flex;
@@ -6,6 +11,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../assets/bannerImage.jpg");
   background-position: bottom;
+  background-repeat: no-repeat;
 }
 .header_wrapper {
   display: flex;
@@ -29,6 +35,40 @@
   font-weight: 600;
 }
 
+/* .whatIsWraple {
+  margin-top: var(--sectionGapLG);
+} */
+.whatIsWraple_text_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: 8px;
+}
+.whatIsWrapleImage_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.whatIsWrapleImage_wrapper > img {
+  width: 65%;
+  object-fit: cover;
+  object-position: center;
+}
+.whatIsWarpleContent_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.whatIsWarpleContent_wrapper > p {
+  width: 80%;
+}
+.whatIsWarpleContent_wrapper > hr {
+  width: 40%;
+  background: var(--backgroundSubColor2);
+}
+
 /* tab screen */
 @media (min-width: 641px) and (max-width: 1023px) {
   .headerText {
@@ -36,6 +76,16 @@
   }
   .headerTextSmall {
     font-size: 19px;
+  }
+  .whatIsWrapleImage_wrapper {
+    width: 100%;
+  }
+  .whatIsWrapleImage_wrapper > img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .whatIsWarpleContent_wrapper {
+    row-gap: 20px;
   }
 }
 
@@ -46,5 +96,15 @@
   }
   .headerTextSmall {
     font-size: 18px;
+  }
+  .whatIsWrapleImage_wrapper {
+    width: 100%;
+  }
+  .whatIsWrapleImage_wrapper > img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .whatIsWarpleContent_wrapper {
+    row-gap: 20px;
   }
 }

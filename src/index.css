@@ -2,7 +2,7 @@
   font-family: "Noto Sans JP", sans-serif;
 
   /* colors */
-  --textColor: #000;
+  --textColor: #191919;
   --textSubButtonColor: #1a35c9;
   --backgroundColor: #ffffff;
   --backgroundSubColor: #f4f4f4;
@@ -13,6 +13,10 @@
   --tabScreenMin: 641px;
   --tabScreenMax: 1023px;
   --laptopScreenMin: 1024px;
+
+  /* speceing */
+  --sectionGapLG: 65px;
+  --sectionGapSM: 45px;
 
   /* color-scheme: light dark; */
   /* color: rgba(255, 255, 255, 0.87); */

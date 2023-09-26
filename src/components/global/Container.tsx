@@ -1,8 +1,18 @@
 import React from "react";
 import style from "./container.module.css";
 
-const Container = ({ children }: { children: React.ReactNode }) => {
-  return <div className={style.container_wrapper}>{children}</div>;
+const Container = ({
+  children,
+  column,
+}: {
+  children: React.ReactNode;
+  column?: boolean;
+}) => {
+  return (
+    <div className={`${style.container_wrapper} ${column && style.gap}`}>
+      {children}
+    </div>
+  );
 };
 
 export default Container;

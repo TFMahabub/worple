@@ -5,12 +5,23 @@
   padding: 1rem;
 }
 
+.gap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
 /* tab-Screen */
 @media (min-width: 641px) and (max-width: 1023px) {
   .container_wrapper {
     width: 100%;
     margin: 0 auto;
     padding: 2rem;
+  }
+  .gap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
 /* mobile-screen */
@@ -19,5 +30,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 12px;
+  }
+  .gap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
