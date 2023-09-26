@@ -1,3 +1,6 @@
+import Point1 from "../../assets/aboutPage/point-1.png";
+import Point2 from "../../assets/aboutPage/point-2.png";
+import Point3 from "../../assets/aboutPage/point-3.png";
 import { RightArrow } from "../../assets/icons/RightArrow";
 import whatIsWarple from "../../assets/whatIsWarple.png";
 import PrimaryButton from "../../components/buttons/PrimaryButton";
@@ -20,7 +23,7 @@ const AboutPage = () => {
           </div>
         </Container>
       </section>
-      {/* ---------WHAT-IS-warple-part--------- */}
+      {/* ===========WHAT-IS-warple-part=========== */}
       <section className={style.whatIsWraple}>
         <Container column>
           <div className={style.whatIsWraple_text_wrapper}>
@@ -50,6 +53,60 @@ const AboutPage = () => {
             初めての方へ
             <RightArrow />
           </PrimaryButton>
+        </Container>
+      </section>
+      {/* ==============POINT-part============== */}
+      <section className={style.pointWraple}>
+        <Container column>
+          <div className={style.whatIsWraple_text_wrapper}>
+            <PrimaryText>POINT</PrimaryText>
+            <SecondaryText>warpleの3つのポイント?</SecondaryText>
+          </div>
+          <div className={style.point_wrapper}>
+            <div className={style.flexItem}>
+              {/* ---------POINT-1--------- */}
+              <div className={style.point_content_wrapper}>
+                <img src={Point1} alt="" />
+                <SecondaryText blueText>
+                  どこよりも <br /> 安く留学できる
+                </SecondaryText>
+                <hr />
+                <DescriptionText>
+                  warple は、お申し込みから渡航の準備まで留学に関わる
+                  すべてをWEB上で完結させることで、語学学校に直接申し
+                  込むよりも安い費用で留学することが可能です。
+                </DescriptionText>
+              </div>
+              {/* ---------POINT-3--------- */}
+              <div className={style.point_content_wrapper}>
+                <img src={Point2} alt="" />
+                <SecondaryText blueText>
+                  どこよりも <br /> 安く留学できる
+                </SecondaryText>
+                <hr />
+                <DescriptionText>
+                  warple は、お申し込みから渡航の準備まで留学に関わる
+                  すべてをWEB上で完結させることで、語学学校に直接申し
+                  込むよりも安い費用で留学することが可能です。
+                </DescriptionText>
+              </div>
+            </div>
+            {/* ---------POINT-2--------- */}
+            <div className={style.flexItem}>
+              <div className={style.point_content_wrapper}>
+                <img src={Point3} alt="" />
+                <SecondaryText blueText>
+                  どこよりも <br /> 安く留学できる
+                </SecondaryText>
+                <hr />
+                <DescriptionText>
+                  warple は、お申し込みから渡航の準備まで留学に関わる
+                  すべてをWEB上で完結させることで、語学学校に直接申し
+                  込むよりも安い費用で留学することが可能です。
+                </DescriptionText>
+              </div>
+            </div>
+          </div>
         </Container>
       </section>
     </main>

@@ -1,8 +1,7 @@
 .container_wrapper {
-  width: 100%;
+  width: 80%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1rem;
 }
 
 .gap {
