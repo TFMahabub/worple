@@ -1,7 +1,10 @@
 import Point1 from "../../assets/aboutPage/point-1.png";
 import Point2 from "../../assets/aboutPage/point-2.png";
 import Point3 from "../../assets/aboutPage/point-3.png";
+import Batch from "../../assets/icons/Batch";
+import ReasonItem from "../../assets/icons/ReasonItem";
 import { RightArrow } from "../../assets/icons/RightArrow";
+import { TickMark } from "../../assets/icons/TickMark";
 import whatIsWarple from "../../assets/whatIsWarple.png";
 import PrimaryButton from "../../components/buttons/PrimaryButton";
 import Container from "../../components/global/Container";
@@ -9,6 +12,7 @@ import FlexContainer from "../../components/global/FlexContainer";
 import DescriptionText from "../../components/texts/DescriptionText";
 import PrimaryText from "../../components/texts/PrimaryText";
 import SecondaryText from "../../components/texts/SecondaryText";
+import ThirdTypeText from "../../components/texts/ThirdTypeText";
 import style from "./index.module.css";
 
 const AboutPage = () => {
@@ -105,6 +109,64 @@ const AboutPage = () => {
                   込むよりも安い費用で留学することが可能です。
                 </DescriptionText>
               </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+      {/* ==============POINT-Part-2============== */}
+      <section className={style.point2Wraple}>
+        <Container column>
+          <div className={style.point_conatinerBox}>
+            {/* ---------POINT--------- */}
+            <div className={style.whatIsWraple_text_wrapper}>
+              <PrimaryText>POINT</PrimaryText>
+              <SecondaryText>こんなひとにおすすめ!</SecondaryText>
+            </div>
+            <div className={style.point2_wrapper}>
+              <div className={style.point2_item}>
+                <TickMark />
+                <DescriptionText>とにかく安く申し込みたい方</DescriptionText>
+              </div>
+              <div className={style.point2_item}>
+                <TickMark />
+                <DescriptionText>とにかく安く申し込みたい方</DescriptionText>
+              </div>
+              <div className={style.point2_item}>
+                <TickMark />
+                <DescriptionText>とにかく安く申し込みたい方</DescriptionText>
+              </div>
+              <div className={style.point2_item}>
+                <TickMark />
+                <DescriptionText>とにかく安く申し込みたい方</DescriptionText>
+              </div>
+            </div>
+            {/* ---------Reason--------- */}
+            <div className={style.whatIsWraple_text_wrapper}>
+              <PrimaryText>Reason</PrimaryText>
+              <SecondaryText>最低価格保証を実現できる理由!</SecondaryText>
+            </div>
+            <div className={style.point2_wrapper}>
+              {[...Array(3)].map((_, i) => (
+                <div className={style.reason_item} key={i}>
+                  <div className={style.reasonItemIcon_wrapper}>
+                    <ReasonItem />
+                    <div className={style.batchIcon}>
+                      <div className={style.batchIcon_wrapper}>
+                        <Batch />
+                        <p>01</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={style.reasonItemContent_wrapper}>
+                    <ThirdTypeText>とにかく安く申し込みたい方</ThirdTypeText>
+                    <hr />
+                    <DescriptionText>
+                      語学学校/宿泊先の空き状況やキャンペーン情報をリアルタイムで知ることができるため、warpleならいつでも
+                      どこでも申し込んだり留学準備を進めることができます。
+                    </DescriptionText>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </Container>

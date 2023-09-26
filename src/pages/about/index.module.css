@@ -74,6 +74,7 @@
 .point_wrapper {
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   column-gap: 60px;
 }
@@ -90,7 +91,66 @@
   row-gap: 10px;
 }
 .point_content_wrapper > img {
-  width: 60%;
+  width: 70%;
+}
+
+/* ==========point-2-part========== */
+.point2Wraple {
+  background-color: var(--backgroundSubColor2);
+  border-radius: 50px 50px 0 0;
+  padding: 40px;
+}
+.point_conatinerBox {
+  border-radius: 10px;
+  background-color: var(--backgroundColor);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.point2_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.point2_item {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+/* .point_item::after {
+  content: "";
+  width: 100%;
+  background: #000;
+  height: 1px;
+} */
+
+/* ==========point-2-part========== */
+.reason_item {
+  display: flex;
+  column-gap: 20px;
+}
+.reasonItemIcon_wrapper {
+  position: relative;
+}
+.batchIcon {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+.batchIcon_wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid #000; */
+}
+.batchIcon_wrapper > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--backgroundColor);
 }
 
 /* tab screen */
@@ -112,7 +172,6 @@
     row-gap: 20px;
   }
   .point_wrapper {
-    display: flex;
     flex-direction: column;
     row-gap: 40px;
   }
@@ -146,7 +205,6 @@
     row-gap: 20px;
   }
   .point_wrapper {
-    display: flex;
     flex-direction: column;
     row-gap: 40px;
   }
