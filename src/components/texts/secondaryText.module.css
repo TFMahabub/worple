@@ -1,0 +1,24 @@
+.secondaryText {
+  font-size: 30px;
+}
+
+.blueText {
+  color: var(--textColor);
+}
+.blueText {
+  color: var(--textSubButtonColor);
+}
+
+/* tab screen */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .secondaryText {
+    font-size: 28px;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 640px) {
+  .secondaryText {
+    font-size: 25px;
+  }
+}

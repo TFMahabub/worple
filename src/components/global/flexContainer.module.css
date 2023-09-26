@@ -1,0 +1,25 @@
+.flexContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+/* tab screen */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 640px) {
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}

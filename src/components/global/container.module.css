@@ -1,8 +1,13 @@
 .container_wrapper {
-  width: 100%;
+  width: 80%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1rem;
+}
+
+.gap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
 }
 
 /* tab-Screen */
@@ -12,6 +17,11 @@
     margin: 0 auto;
     padding: 2rem;
   }
+  .gap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
 }
 /* mobile-screen */
 @media (max-width: 640px) {
@@ -19,5 +29,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 12px;
+  }
+  .gap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
   }
 }

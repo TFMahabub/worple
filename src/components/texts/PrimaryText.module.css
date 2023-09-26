@@ -1,0 +1,22 @@
+.text {
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--textSubButtonColor);
+  /* line-height: 70px; */
+  font-family: inter;
+}
+
+/* tab screen */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .text {
+    font-size: 50px;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 640px) {
+  .text {
+    font-size: 35px;
+  }
+}
