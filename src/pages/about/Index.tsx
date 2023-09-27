@@ -1,6 +1,10 @@
+import cardImage1 from "../../assets/aboutPage/card-1.png";
+import cardImage2 from "../../assets/aboutPage/card-2.png";
+import cardImage3 from "../../assets/aboutPage/card-3.png";
 import Point1 from "../../assets/aboutPage/point-1.png";
 import Point2 from "../../assets/aboutPage/point-2.png";
 import Point3 from "../../assets/aboutPage/point-3.png";
+import { ArrowKey } from "../../assets/icons/ArrowKey";
 import Batch from "../../assets/icons/Batch";
 import ReasonItem from "../../assets/icons/ReasonItem";
 import { RightArrow } from "../../assets/icons/RightArrow";
@@ -167,6 +171,52 @@ const AboutPage = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </Container>
+        <div className={style.point2Down_wrapper}>
+          <Container>
+            <div className={style.point2Down_item_wrappera}>
+              <SecondaryText blueText>
+                語学学校/宿泊先の空き状況やキャンペ
+              </SecondaryText>
+              <PrimaryButton>
+                初めての方へ <RightArrow />
+              </PrimaryButton>
+            </div>
+          </Container>
+        </div>
+      </section>
+      {/* ==============HOW TO USE============== */}
+      <section className={style.howToUse_wrapper}>
+        <Container column>
+          <div className={style.whatIsWraple_text_wrapper}>
+            <PrimaryText>HOW TO USE</PrimaryText>
+            <SecondaryText>使い方は3ステップで簡単！</SecondaryText>
+          </div>
+          <div className={style.card_wrapper}>
+            <div className={style.cardItem}>
+              <img src={cardImage1} alt="" />
+              <hr />
+              <ThirdTypeText>
+                自分の希望に合った 語学学校・プランを探す
+              </ThirdTypeText>
+            </div>
+            <ArrowKey />
+            <div className={style.cardItem}>
+              <img src={cardImage2} alt="" />
+              <hr />
+              <ThirdTypeText>
+                自分の希望に合った 語学学校・プランを探す
+              </ThirdTypeText>
+            </div>
+            <ArrowKey />
+            <div className={style.cardItem}>
+              <img src={cardImage3} alt="" />
+              <hr />
+              <ThirdTypeText>
+                自分の希望に合った 語学学校・プランを探す
+              </ThirdTypeText>
             </div>
           </div>
         </Container>
