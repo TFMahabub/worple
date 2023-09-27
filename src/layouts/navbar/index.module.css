@@ -27,7 +27,14 @@
   align-items: center;
   column-gap: 20px;
 }
-
+.navlink_wrapper2 {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.displayed {
+  display: none;
+}
 .button {
   text-decoration: none;
   color: var(--textSubButtonColor);
@@ -41,6 +48,17 @@
 
 @media (max-width: 640px) {
   .logo {
-    height: 1.2rem;
+    height: 1.4rem;
+  }
+  .navlink_wrapper2 {
+    display: none;
+  }
+  .displayed {
+    display: block;
+  }
+  .isOpenNavMenu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
   }
 }
