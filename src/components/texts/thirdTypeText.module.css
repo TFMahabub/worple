@@ -3,3 +3,6 @@
   font-weight: 700;
   color: var(--textSubButtonColor);
 }
+.grayText {
+  color: var(--textColorGray);
+}

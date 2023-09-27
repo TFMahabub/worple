@@ -3,10 +3,12 @@
 
   /* colors */
   --textColor: #191919;
+  --textColorGray: #6f6f6f;
   --textSubButtonColor: #1a35c9;
   --backgroundColor: #ffffff;
   --backgroundSubColor: #f4f4f4;
   --backgroundSubColor2: #ffd0cc;
+  --footerColor: #e8e8e8;
 
   /* breakPoint */
   --mobileScreenMax: 640px;
